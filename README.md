@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/justcppdev/vector_example.svg?branch=master)](https://travis-ci.org/justcppdev/vector_example)
+[![Build Status](https://travis-ci.org/MikhailSayapin/vector_example/builds/357586541)
 
 ```
 cmake -H. -B_builds -DBUILD_TESTS=ON
