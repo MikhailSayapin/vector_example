@@ -10,7 +10,7 @@ vector_t::vector_t()
 	elements_ = nullptr;
 }
 
-vector_t::vector_t(vector_t const & other)
+vector_t::vector_t(vector_t const& other)
 {
 	size_ = other.size_;
 	capacity_ = other.capacity_;
@@ -22,7 +22,7 @@ vector_t::vector_t(vector_t const & other)
 
 }
 
-vector_t & vector_t::operator =(vector_t const & other)
+vector_t& vector_t::operator =(vector_t const& other)
 {
 	if (&other != this)
 	{
@@ -39,7 +39,7 @@ vector_t & vector_t::operator =(vector_t const & other)
 	return *this;
 }
 
-bool vector_t::operator ==(vector_t const & other) const
+bool vector_t::operator ==(vector_t const& other) const
 {
 	if (this->size_ == other.size_)
 	{
@@ -61,9 +61,10 @@ bool vector_t::operator ==(vector_t const & other) const
 
 vector_t::~vector_t()
 {
+	delete[] elements_;
 	size_ = 0;
 	capacity_ = 0;
-	delete[] elements_;
+	
 }
 
 std::size_t vector_t::size() const
@@ -88,7 +89,7 @@ void vector_t::push_back(int value)
 		elements_[0] = value;
 	}
 
-	else if (size_ = capacity_)
+	else if (size_ == capacity_)
 	{
 		capacity *= 2;
 		int *massiv = new int[capacity_];
@@ -144,7 +145,7 @@ int vector_t::operator [](std::size_t index) const
 	return elements_[index];
 }
 
-bool operator !=(vector_t const & lhs, vector_t const & rhs)
+bool operator !=(vector_t const& lhs, vector_t const& rhs)
 {
 	if (lhs == rhs)
 	{
