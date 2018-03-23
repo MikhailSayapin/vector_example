@@ -1,5 +1,5 @@
 #include <algorithm>
-#include <cassert> //ld,l
+#include <cassert> 
 
 #include "vector.hpp"
 
