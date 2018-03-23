@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/DolanL/vector_example/builds/357352858)
+[![Build Status](https://travis-ci.org/DolanL/vector_example.svg?branch=master)](https://travis-ci.org/DolanL/vector_example)
 ```
 cmake -H. -B_builds -DBUILD_TESTS=ON
 cmake --build _builds
