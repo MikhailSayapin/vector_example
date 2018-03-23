@@ -7,7 +7,7 @@ vector_t::vector_t() // 123
 {
 }
 
-vector_t::vector_t(vector_t const & other)
+vector_t::vector_t(vector_t const & other) // 1234
 {
 }
 
