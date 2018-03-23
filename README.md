@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/MikhailSayapin/vector_example/builds/357586541)
+[![Build Status](hthttps://travis-ci.org/MikhailSayapin/vector_example/jobs/357598808)
 
 ```
 cmake -H. -B_builds -DBUILD_TESTS=ON
